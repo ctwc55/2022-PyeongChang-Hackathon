@@ -201,7 +201,7 @@
           </div>
         </div>
         <div class="box">
-          <img src="images/f-2.jpg" alt="">
+          <img src="{{url_for('static',filename='images/f-2.jpg')}}" alt="">
           <div class="link_box">
             <h5>
               Blueberry
@@ -212,7 +212,7 @@
           </div>
         </div>
         <div class="box">
-          <img src="images/f-3.jpg" alt="">
+          <img src="{{url_for('static',filename='images/f-3.jpg')}}" alt="">
           <div class="link_box">
             <h5>
               Banana
@@ -223,7 +223,7 @@
           </div>
         </div>
         <div class="box">
-          <img src="images/f-4.jpg" alt="">
+          <img src="{{url_for('static',filename='images/f-4.jpg')}}" alt="">
           <div class="link_box">
             <h5>
               Apple
@@ -234,7 +234,7 @@
           </div>
         </div>
         <div class="box">
-          <img src="images/f-5.jpg" alt="">
+          <img src="{{url_for('static',filename='images/f-5.jpg')}}" alt="">
           <div class="link_box">
             <h5>
               Mango
@@ -245,7 +245,7 @@
           </div>
         </div>
         <div class="box">
-          <img src="images/f-6.jpg" alt="">
+          <img src="{{url_for('static',filename='images/f-6.jpg')}}" alt="">
           <div class="link_box">
             <h5>
               Strawberry
@@ -500,8 +500,8 @@
   <!-- footer section -->
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-  <script type="text/javascript" src="js/custom.js"></script>
+  <script type="text/javascript" src="{{url_for('static',filename='js/bootstrap.js')}}"></script>
+  <script type="text/javascript" src="{{url_for('static',filename='js/custom.js')}}"></script>
 
 </body>
 
