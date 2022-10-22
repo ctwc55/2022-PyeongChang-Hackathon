@@ -12,20 +12,20 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Ninom</title>
+  <title>푸드아이</title>
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
 
   <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/bootstrap.css')}}" />
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Dosis:400,600,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
   <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
+  <link href="{{url_for('static',filename='css/style.css')}}" rel="stylesheet" />
   <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
+  <link href="{{url_for('static',filename='css/responsive.css')}}" rel="stylesheet" />
 </head>
 
 <body class="sub_page">
@@ -34,7 +34,7 @@
     <div class="brand_box">
       <a class="navbar-brand" href="index.html">
         <span>
-          Ninom
+          푸드아이
         </span>
       </a>
     </div>
@@ -55,27 +55,21 @@
             <div class="d-flex  flex-column flex-lg-row align-items-center">
               <ul class="navbar-nav  ">
                 <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="index.html">메인 <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.html">About </a>
+                  <a class="nav-link" href="about.html">실시간 식품 탐지 </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="fruit.html">Our Fruit </a>
+                  <a class="nav-link" href="fruit.html">음식과 알러지 </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="testimonial.html">Testimonial</a>
+                  <a class="nav-link" href="testimonial.html">상생! 음식 궁합 보기</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact Us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Login</a>
+                  <a class="nav-link" href="testimonial2.html">상극! 음식 궁합 보기</a>
                 </li>
               </ul>
-              <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
-              </form>
             </div>
           </div>
         </nav>
@@ -92,7 +86,7 @@
       <div class="heading_container">
         <hr>
         <h2>
-          Fresh Fruit
+          대표적인 알러지 유발 음식
         </h2>
       </div>
     </div>
@@ -100,68 +94,68 @@
 
       <div class="fruit_container">
         <div class="box">
-          <img src="images/f-1.jpg" alt="">
+          <img src="{{url_for('static',filename='images/f-1.jpg')}}" alt="">
           <div class="link_box">
             <h5>
-              Orange
+              달걀
             </h5>
             <a href="">
-              Buy Now
+              자세히 알아보기
             </a>
           </div>
         </div>
         <div class="box">
-          <img src="images/f-2.jpg" alt="">
+          <img src="{{url_for('static',filename='images/f-2.jpg')}}" alt="">
           <div class="link_box">
             <h5>
-              Blueberry
+              우유
             </h5>
             <a href="">
-              Buy Now
+              자세히 알아보기
             </a>
           </div>
         </div>
         <div class="box">
-          <img src="images/f-3.jpg" alt="">
+          <img src="{{url_for('static',filename='images/f-3.jpg')}}" alt="">
           <div class="link_box">
             <h5>
-              Banana
+              견과류
             </h5>
             <a href="">
-              Buy Now
+              자세히 알아보기
             </a>
           </div>
         </div>
         <div class="box">
-          <img src="images/f-4.jpg" alt="">
+          <img src="{{url_for('static',filename='images/f-4.jpg')}}" alt="">
           <div class="link_box">
             <h5>
-              Apple
+              밀가루
             </h5>
             <a href="">
-              Buy Now
+              자세히 알아보기
             </a>
           </div>
         </div>
         <div class="box">
-          <img src="images/f-5.jpg" alt="">
+          <img src="{{url_for('static',filename='images/f-5.jpg')}}" alt="">
           <div class="link_box">
             <h5>
-              Mango
+              과일
             </h5>
             <a href="">
-              Buy Now
+              자세히 알아보기
             </a>
           </div>
         </div>
         <div class="box">
-          <img src="images/f-6.jpg" alt="">
+          <img src="{{url_for('static',filename='images/f-6.jpg')}}" alt="">
           <div class="link_box">
             <h5>
-              Strawberry
+              갑각류
             </h5>
             <a href="">
-              Buy Now
+              자세히 알아보기
             </a>
           </div>
         </div>
@@ -185,7 +179,7 @@
         <div class="row">
           <div class="col-md-4">
             <a href="">
-              <img src="images/location.png" alt="">
+              <img src="{{url_for('static',filename='images/location.png')}}" alt="">
               <span>
                 Passages of Lorem Ipsum available
               </span>
@@ -193,7 +187,7 @@
           </div>
           <div class="col-md-4">
             <a href="">
-              <img src="images/call.png" alt="">
+              <img src="{{url_for('static',filename='images/call.png')}}" alt="">
               <span>
                 Call : +012334567890
               </span>
@@ -201,7 +195,7 @@
           </div>
           <div class="col-md-4">
             <a href="">
-              <img src="images/mail.png" alt="">
+              <img src="{{url_for('static',filename='images/mail.png')}}" alt="">
               <span>
                 demo@gmail.com
               </span>
@@ -224,22 +218,22 @@
           <div class="info_social">
             <div>
               <a href="">
-                <img src="images/facebook-logo-button.png" alt="">
+                <img src="{{url_for('static',filename='images/facebook-logo-button.png')}}" alt="">
               </a>
             </div>
             <div>
               <a href="">
-                <img src="images/twitter-logo-button.png" alt="">
+                <img src="{{url_for('static',filename='images/twitter-logo-button.png')}}" alt="">
               </a>
             </div>
             <div>
               <a href="">
-                <img src="images/linkedin.png" alt="">
+                <img src="{{url_for('static',filename='images/linkedin.png')}}" alt="">
               </a>
             </div>
             <div>
               <a href="">
-                <img src="images/instagram.png" alt="">
+                <img src="{{url_for('static',filename='images/instagram.png')}}" alt="">
               </a>
             </div>
           </div>
@@ -262,9 +256,9 @@
   <!-- footer section -->
 
 
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-  <script type="text/javascript" src="js/custom.js"></script>
+  <script type="text/javascript" src="{{url_for('static',filename='js/jquery-3.4.1.min.js')}}"></script>
+  <script type="text/javascript" src="{{url_for('static',filename='js/bootstrap.js')}}"></script>
+  <script type="text/javascript" src="{{url_for('static',filename='js/custom.js')}}"></script>
 
 </body>
 

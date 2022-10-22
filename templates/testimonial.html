@@ -12,20 +12,20 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Ninom</title>
+  <title>푸드아이</title>
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
 
   <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/bootstrap.css')}}" />
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Dosis:400,600,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
   <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
+  <link href="{{url_for('static',filename='css/style.css')}}" rel="stylesheet" />
   <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
+  <link href="{{url_for('static',filename='css/responsive.css')}}" rel="stylesheet" />
 </head>
 
 <body class="sub_page">
@@ -34,7 +34,7 @@
     <div class="brand_box">
       <a class="navbar-brand" href="index.html">
         <span>
-          Ninom
+          푸드아이
         </span>
       </a>
     </div>
@@ -55,27 +55,21 @@
             <div class="d-flex  flex-column flex-lg-row align-items-center">
               <ul class="navbar-nav  ">
                 <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="index.html">메인 <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.html">About </a>
+                  <a class="nav-link" href="about.html">실시간 식품 탐지 </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="fruit.html">Our Fruit </a>
+                  <a class="nav-link" href="fruit.html">음식과 알러지 </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="testimonial.html">Testimonial</a>
+                  <a class="nav-link" href="testimonial.html">상생! 음식 궁합 보기</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact Us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Login</a>
+                  <a class="nav-link" href="testimonial2.html">상극! 음식 궁합 보기</a>
                 </li>
               </ul>
-              <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
-              </form>
             </div>
           </div>
         </nav>
@@ -92,7 +86,7 @@
     <div class="container ">
       <div class="heading_container">
         <h2>
-          What Syas Cutomer
+          서로 상생인 음식
         </h2>
         <hr>
       </div>
@@ -101,21 +95,19 @@
           <div class="carousel-item active">
             <div class="client_container layout_padding-top">
               <div class="img-box">
-                <img src="images/client-img.png" alt="">
+                <img src="{{url_for('static',filename='images/check.png')}}" alt="">
               </div>
               <div class="detail-box">
                 <h5>
-                  Jone Mark
+                  된장과 부추
                 </h5>
                 <p>
-                  <img src="images/left-quote.png" alt="">
+                  <img src="{{url_for('static',filename='images/left-quote.png')}}" alt="">
                   <span>
-                    Lorem ipsum dolor sit amet,
+                    소금 방어! 비타민 보충!
                   </span>
-                  <img src="images/right-quote.png" alt=""> <br>
-                  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                  veniam, quis nostrud exercitation ullamco laboris ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  <img src="{{url_for('static',filename='images/right-quote.png')}}" alt=""> <br>
+                  부추의 성분이 된장의 소금성분 과잉섭취를 막아주고 부족한 비타민 A,C를 보충해줍니다.
                 </p>
               </div>
             </div>
@@ -123,21 +115,19 @@
           <div class="carousel-item">
             <div class="client_container layout_padding-top">
               <div class="img-box">
-                <img src="images/client-img.png" alt="">
+                <img src="{{url_for('static',filename='images/check.png')}}" alt="">
               </div>
               <div class="detail-box">
                 <h5>
-                  Jone Mark
+                  시금치와 참깨
                 </h5>
                 <p>
-                  <img src="images/left-quote.png" alt="">
+                  <img src="{{url_for('static',filename='images/left-quote.png')}}" alt="">
                   <span>
-                    Lorem ipsum dolor sit amet,
+                    결석 방어! 단백질, 지방 보충!
                   </span>
-                  <img src="images/right-quote.png" alt=""> <br>
-                  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                  veniam, quis nostrud exercitation ullamco laboris ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  <img src="{{url_for('static',filename='images/right-quote.png')}}" alt=""> <br>
+                  참깨가 시금치의 결석발생성분을 약하게 하여 결석을 예방하고 시금치의 부족 한 단백질과 지방 보충해줍니다.
                 </p>
               </div>
             </div>
@@ -145,21 +135,19 @@
           <div class="carousel-item">
             <div class="client_container layout_padding-top">
               <div class="img-box">
-                <img src="images/client-img.png" alt="">
+                <img src="{{url_for('static',filename='images/check.png')}}" alt="">
               </div>
               <div class="detail-box">
                 <h5>
-                  Jone Mark
+                  콩과 식초
                 </h5>
                 <p>
-                  <img src="images/left-quote.png" alt="">
+                  <img src="{{url_for('static',filename='images/left-quote.png')}}" alt="">
                   <span>
-                    Lorem ipsum dolor sit amet,
+                    세균 번식 방어! 단백질 보충!
                   </span>
-                  <img src="images/right-quote.png" alt=""> <br>
-                  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                  veniam, quis nostrud exercitation ullamco laboris ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  <img src="{{url_for('static',filename='images/right-quote.png')}}" alt=""> <br>
+                  식초가 콩의 풍부한 단백질 소화흡수를 도우며 체내의 세균번식을 억제해줍니다.
                 </p>
               </div>
             </div>
@@ -191,7 +179,7 @@
         <div class="row">
           <div class="col-md-4">
             <a href="">
-              <img src="images/location.png" alt="">
+              <img src="{{url_for('static',filename='images/location.png')}}" alt="">
               <span>
                 Passages of Lorem Ipsum available
               </span>
@@ -199,7 +187,7 @@
           </div>
           <div class="col-md-4">
             <a href="">
-              <img src="images/call.png" alt="">
+              <img src="{{url_for('static',filename='images/call.png')}}" alt="">
               <span>
                 Call : +012334567890
               </span>
@@ -207,7 +195,7 @@
           </div>
           <div class="col-md-4">
             <a href="">
-              <img src="images/mail.png" alt="">
+              <img src="{{url_for('static',filename='images/mail.png')}}" alt="">
               <span>
                 demo@gmail.com
               </span>
@@ -230,22 +218,22 @@
           <div class="info_social">
             <div>
               <a href="">
-                <img src="images/facebook-logo-button.png" alt="">
+                <img src="{{url_for('static',filename='images/facebook-logo-button.png')}}" alt="">
               </a>
             </div>
             <div>
               <a href="">
-                <img src="images/twitter-logo-button.png" alt="">
+                <img src="{{url_for('static',filename='images/twitter-logo-button.png')}}" alt="">
               </a>
             </div>
             <div>
               <a href="">
-                <img src="images/linkedin.png" alt="">
+                <img src="{{url_for('static',filename='images/linkedin.png')}}" alt="">
               </a>
             </div>
             <div>
               <a href="">
-                <img src="images/instagram.png" alt="">
+                <img src="{{url_for('static',filename='images/instagram.png')}}" alt="">
               </a>
             </div>
           </div>
@@ -268,9 +256,9 @@
   <!-- footer section -->
 
 
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-  <script type="text/javascript" src="js/custom.js"></script>
+  <script type="text/javascript" src="{{url_for('static',filename='js/jquery-3.4.1.min.js')}}"></script>
+  <script type="text/javascript" src="{{url_for('static',filename='js/bootstrap.js')}}"></script>
+  <script type="text/javascript" src="{{url_for('static',filename='js/custom.js')}}"></script>
 
 </body>
 
