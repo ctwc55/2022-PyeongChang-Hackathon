@@ -1,6 +1,9 @@
 # Created by https://www.toptal.com/developers/gitignore/api/python,flask,react
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,flask,react
 
+img.jpg
+img2.jpg
+
 ### Flask ###
 instance/*
 !instance/.gitignore
