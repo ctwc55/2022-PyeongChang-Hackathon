@@ -32,7 +32,7 @@ import allergy
 
 def run():
 
-    model = 'snack.pt'
+    model = 'meal.pt'
 
 
 
@@ -150,7 +150,7 @@ def run():
             im0 = np.array(img_pillow)
             #im0 = cv2.putText(im0, alert, (200,70),font, 1, green, 2, cv2.LINE_AA)
 
-            cv2.imwrite("./static/images/img.jpg", im0)
+            cv2.imwrite("./static/images/img2.jpg", im0)
 
             '''
             if view_img:
